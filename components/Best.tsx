@@ -89,7 +89,7 @@ export default function Best() {
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.03 }}
-                className="min-w-[70%] bg-white rounded-xl shadow-sm border p-3 flex-shrink-0"
+                className="min-w-[70%] bg-white rounded-xl shadow-sm border p-3 shrink-0"
               >
                 <div className="relative w-full h-44 rounded-lg overflow-hidden mb-3">
                   <Image src={item.img} alt={item.name} fill className="object-cover" />
