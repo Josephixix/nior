@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import {Lora } from "next/font/google"; 
+import {Lora,Montserrat  } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -8,6 +8,11 @@ const lora = Lora ({
   variable: "--font-lora",
   weight: ["700"],
 });
+
+const montserrat = Montserrat ({
+  variable: "--font-montserrat",
+  weight: ["700"],
+});     
 
 export const metadata: Metadata = {
   title: "Nior",
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${lora.variable} antialiased`}
+        className={` ${lora.variable} ${montserrat.variable}   antialiased`}
       >
         <Navbar />
         {children}

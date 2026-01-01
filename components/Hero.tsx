@@ -29,7 +29,7 @@ export default function Hero() {
     
     
 <section className="relative overflow-hidden px-4 sm:px-8 md:px-16 
-py-8 lg:px-20 min-h-[80dvh] md:min-h-[99dvh] 
+py-8 lg:px-20 min-h-[80dvh] md:min-h-screen 
  flex items-center justify-center text-center md:mt-0 lg:mt-0">
 
   {/* Background image */}

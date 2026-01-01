@@ -1,22 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { m, motion } from "framer-motion";
-import { Montserrat } from "next/font/google";
-import { i } from "motion/react-client";
-import { Sofia_Sans } from "next/font/google";
 
-const sofia = Sofia_Sans  ({
-  variable: "--font-sofia",
-  weight: ["400"],
-});
-
-
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
 
 
 export default function About() {
@@ -37,15 +23,14 @@ export default function About() {
   </div>
 
   {/* Main Heading */}
-  <p
+  <h3
     className={
-      "text-2xl md:text-3xl lg:text-5xl mb-3 font-bold tracking-tighter leading-[1.2] text-foreground " +
-      montserrat.className
+      "text-2xl md:text-3xl lg:text-5xl mb-3 font-bold tracking-tighter leading-[1.2] text-foreground "
     }
   >
     Global Fashion Collections <br />
     Curated to Inspire Your Style Every Day
-  </p>
+  </h3>
 
   {/* Content */}
   <div className="flex flex-col lg:flex-row items-start justify-between gap-6">

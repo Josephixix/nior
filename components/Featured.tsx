@@ -1,22 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+
 import { m, motion } from "framer-motion";
-import { Montserrat } from "next/font/google";
-import { i } from "motion/react-client";
-import { Sofia_Sans } from "next/font/google";
 
-const sofia = Sofia_Sans  ({
-  variable: "--font-sofia",
-  weight: ["400"],
-});
-
-
-const montserrat = Montserrat ({
-  variable: "--font-montserrat",
-  weight: ["700"],
-});
 
 
 export default function Featured() {
@@ -32,7 +18,7 @@ export default function Featured() {
   <div className="container mx-auto px-4">
 
     {/* Section Title */}
-    <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 ${montserrat.className}`}>
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12">
       Features Collections
     </h2>
 
