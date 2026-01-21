@@ -13,6 +13,7 @@ export default function About() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
   viewport={{ once: true, amount: 0.2 }}
+  id="about"
   className="px-3 md:px-12 lg:px-24 py-20 h-auto md:h-auto lg:h-auto"
 >
   {/* Section Header */}
@@ -48,7 +49,7 @@ export default function About() {
       alt="Fashion Image"
       width={1200}
       height={904}
-      className="object-cover object-center rounded-xl shadow-lg h-64 md:h-[65vh] w-full"
+      className="object-cover object-center rounded-xl h-64 md:h-[65vh] w-full"
       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1200px"
     />
   </div>

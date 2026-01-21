@@ -13,6 +13,7 @@ export default function Featured() {
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
   viewport={{ once: true, amount: 0.2 }}
+  id="featured"
   className="py-10 bg-gray-200 mt-0"
 >
   <div className="container mx-auto px-4">

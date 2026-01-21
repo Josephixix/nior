@@ -56,6 +56,7 @@ export default function Best() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
+          id="products"
           className="px-4 md:px-12 lg:px-24 py-16"
         >
           {/* Header */}
@@ -73,7 +74,7 @@ export default function Best() {
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.03 }}
-                className="min-w-[70%] bg-white rounded-xl shadow-sm border p-3 shrink-0"
+                className="min-w-[70%] bg-white rounded-xl border p-3 shrink-0"
               >
                 <div className="relative w-full h-44 rounded-lg overflow-hidden mb-3">
                   <Image src={item.img} alt={item.name} fill className="object-cover" />
@@ -101,7 +102,7 @@ export default function Best() {
               <motion.div
                 key={item.id}
                 whileHover={{ scale: 1.02 }}
-                className="bg-white rounded-xl shadow-sm border p-4"
+                className="bg-white rounded-xl border p-4"
               >
                 <div className="relative w-full h-64 rounded-lg overflow-hidden mb-4">
                   <Image src={item.img} alt={item.name} fill className="object-cover" />
@@ -116,9 +117,6 @@ export default function Best() {
                 <h4 className="font-semibold mt-2">{item.name}</h4>
                 <p className="text-gray-600">{item.price}</p>
     
-                <button className="mt-3 w-full bg-black hover:bg-green-500 text-white py-2 rounded-lg text-sm">
-                  Shop Now
-                </button>
               </motion.div>
             ))}
           </div>

@@ -26,7 +26,7 @@ export default function Contact() {
         </p>
 
         {/* Form container */}
-        <div className="grid md:grid-cols-2 gap-12 bg-gray-50 border border-gray-200 rounded-xl shadow-sm p-6 md:p-12">
+        <div className="grid md:grid-cols-2 gap-12 bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-12">
           {/* Form */}
           <form className="space-y-6 text-gray-800 w-full">
             {/* Name */}
@@ -76,7 +76,7 @@ export default function Contact() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2  bg-black hover:bg-green-500 text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
+              className="w-full flex items-center justify-center gap-2  bg-black text-white py-2 rounded-md text-sm font-medium hover:opacity-90 transition"
             >
               Send
               <svg

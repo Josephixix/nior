@@ -37,7 +37,7 @@ export default function Navbar() {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setOpen(true)}
-        className="lg:hidden p-2 rounded-lg hover:bg-green-500 transition"
+        className="lg:hidden p-2 rounded-lg transition"
       >
         <Menu className="w-7 h-7 text-black" />
       </button>
@@ -45,35 +45,34 @@ export default function Navbar() {
       {/* Desktop Links */}
       <ul className="hidden lg:flex gap-6 text-lg">
         <li>
-          <Link href="/services" className={`${sofia.className} hover:text-green-500 hover:bg-green-100  text-black transition text-extra-bold`}>
-            Services
+          <Link href="/" className={`${sofia.className} hover:bg-green-100  text-black transition text-extra-bold`}>
+          Home
           </Link>
         </li>
         <li>
-          <Link href="/contact" className={`${sofia.className} hover:text-green-500 hover:bg-green-100 text-black transition text-extra-bold`}>
-            Contact
+          <Link href="#about" className={`${sofia.className} hover:bg-green-100 text-black transition text-extra-bold`}>
+            About
           </Link>
         </li>
         <li>
-          <Link href="/about" className={`${sofia.className} hover:text-green-500 hover:bg-green-100 text-black transition text-extra-bold`}>
-            About us
+          <Link href="#featured" className={`${sofia.className} hover:bg-green-100 text-black transition text-extra-bold`}>
+            Featured
           </Link>
         </li>
-
         <li>
-          <Link href="/about" className={`${sofia.className} hover:text-green-500 hover:bg-green-100 text-black transition text-extra-bold`}>
-            Store Locator
+          <Link href="#products" className={`${sofia.className} hover:bg-green-100 text-black transition text-extra-bold`}>
+            Products
           </Link>
         </li>
       </ul>
 
       {/* Desktop CTA */}    
 
-      <Link href="/sign-in" className="hidden lg:block">
-        <button className="flex items-center gap-2 px-4 py-2 bg-black hover:bg-green-500 text-white rounded-md cursor-pointer transition">
-          <ChessKnight className="w-4 h-4" /> shop now
+      <a href="mailto:support@niorfits.com" className="hidden lg:block">
+        <button className="flex items-center gap-2 px-4 py-2 bg-black hover:bg-gray-500 text-white rounded-md cursor-pointer transition">
+          <ChessKnight className="w-4 h-4" /> Contact Us
         </button>
-      </Link>
+      </a>
 
       {/* FULLSCREEN MOBILE MENU */}
       {open && (
@@ -92,34 +91,34 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="transition transform hover:rotate-90"
             >
-              <X className="w-7 h-7 bg-green-500" />
+              <X className="w-7 h-7 bg-gray-500" />
             </button>
           </div>
 
           {/* Menu Items */}
           <div className="flex flex-col gap-6 px-6 py-8 text-lg">
-            <Link href="/services" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay1 hover:bg-green-500">
-              <ShoppingCart className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Services</span>
+            <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay1">
+              <ShoppingCart className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Home</span>
             </Link>
-            <Link href="/contact" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay2 hover:bg-green-500">
-              <Phone className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Contact</span>
+            <Link href="#about" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay2">
+              <Phone className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>About</span>
             </Link>
-            <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3 hover:bg-green-500">
-              <Mail className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>About Us</span>
+            <Link href="#featured" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3">
+              <Mail className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Featured</span>
             </Link>
 
-             <Link href="/about" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3 hover:bg-green-500">
-              <MapPin className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Store Locator</span>
+             <Link href="#products" onClick={() => setOpen(false)} className="flex items-center gap-3 animate-fadeDelay3">
+              <MapPin className="w-5 h-5 text-gray-600" /> <span className={`${sofia.className} text-black`}>Products</span>
             </Link>
           </div>
 
           {/* Bottom CTA (Sticky on Mobile) */}
           <div className="sticky bottom-0 bg-white px-6 pb-6 pt-4 lg:hidden mt-60 border-gray-200 border-t">
-            <Link href="/sign-in" onClick={() => setOpen(false)}>
-              <button className="w-full flex cursor-pointer items-center justify-center gap-2 px-4 py-3 bg-black hover:bg-green-700 text-white rounded-xl text-lg">
-                <ChessKnight className="w-5 h-5 text-white" /> shop now
+            <a href="mailto:support@niorfits.com" onClick={() => setOpen(false)}>
+              <button className="w-full flex cursor-pointer items-center justify-center gap-2 px-4 py-3 bg-black text-white rounded-xl text-lg">
+                <ChessKnight className="w-5 h-5 text-white" /> Contact Us
               </button>
-            </Link>
+            </a>
             <div className="text-center mt-4 text-black">
               <p className="text-sm">Need help? Call us at</p>
               <a href="tel:+14784070488" className="font-semibold text-green-500 ">
